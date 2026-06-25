@@ -23,7 +23,7 @@ def clean_text(text):
 
 
 # --- INTERFACE ---
-st.title("🗣️ Détecteur de Sujets (NLP)")
+st.title(" Détecteur de Sujets (NLP)")
 st.markdown("Colle un avis client pour comprendre automatiquement le problème.")
 
 user_review = st.text_area("Avis du client (en Anglais) :", height=150,
@@ -61,7 +61,7 @@ if st.button("Analyser"):
 
         # Logique Business spécifique
         if best_topic == 0:
-            st.error("🚨 **ALERTE BUSINESS :** Le client se plaint de la coupe. Risque de retour élevé.")
+            st.error(" **ALERTE BUSINESS :** Le client se plaint de la coupe. Risque de retour élevé.")
             st.write(" Action recommandée : Vérifier le guide des tailles pour ce produit.")
         else:
             st.success(" Ce sujet est généralement moins critique que les problèmes de taille.")
